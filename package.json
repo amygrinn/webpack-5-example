@@ -4,12 +4,12 @@
   "description": "A webpack config that minifies an already working website",
   "main": "index.js",
   "scripts": {
-    "start": "reload --browser --dir public",
+    "start": "reload --browser --dir src",
     "quality": "prettier --write . && eslint . --fix",
     "quality:check": "prettier -c . && eslint .",
     "deploy:login": "surge login",
     "deploy:logout": "surge logout",
-    "deploy": "surge public https://big-yak.surge.sh"
+    "deploy": "surge src https://big-yak.surge.sh"
   },
   "repository": {
     "type": "git",
