@@ -1,21 +1,36 @@
-# [Webpack 5 Demo](https://big-yak.surge.sh)
+# Webpack 5 Demo
 
-1. `npm i`
+_Where the src folder and the built public folder are both working websites_
 
-   Install dependencies
+- [Demo: public](https://madly-haircut.surge.sh)
+- [Demo: source](https://big-yak.surge.sh)
 
-2. `npm start`
+## Useful commands
 
-   Start development server
+- `npm i`
 
-3. `npm run quality`
+  Install dependencies
 
-   Lint and format all source code
+- `npm start`
 
-4. `npm run deploy:login`
+  Start development server
 
-   Login to the deployment service
+- `npm run build`
 
-5. `npm run deploy`
+  Bundle and minify website into the `public` folder
 
-   Deploy the website
+- `npm run quality`
+
+  Lint and format all source code
+
+- `npm run deploy:login`
+
+  Login to the deployment service
+
+- `npm run deploy:src`
+
+  Deploy the src directory to https://big-yak.surge.sh
+
+- `npm run deploy:public`
+
+  Deploy the public directory to https://madly-haircut.surge.sh

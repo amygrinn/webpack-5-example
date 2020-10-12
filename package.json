@@ -11,7 +11,8 @@
     "quality:check": "prettier -c . && eslint .",
     "deploy:login": "surge login",
     "deploy:logout": "surge logout",
-    "deploy": "surge src https://big-yak.surge.sh"
+    "deploy:src": "surge src https://big-yak.surge.sh",
+    "deploy:public": "surge public https://madly-haircut.surge.sh"
   },
   "repository": {
     "type": "git",
