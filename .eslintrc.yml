@@ -1,0 +1,13 @@
+---
+extends:
+  - alloy
+env:
+  browser: true
+rules:
+  eol-last:
+    - error
+    - always
+  no-unused-vars: 0
+  max-nested-callbacks:
+    - error
+    - 5

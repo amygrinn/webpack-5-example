@@ -1,0 +1,38 @@
+{
+  "name": "webpack-5-example",
+  "version": "1.0.0",
+  "description": "A webpack config that minifies an already working website",
+  "main": "index.js",
+  "scripts": {
+    "start": "reload --browser --dir public",
+    "quality": "prettier --write . && eslint . --fix",
+    "quality:check": "prettier -c . && eslint .",
+    "deploy:login": "surge login",
+    "deploy:logout": "surge logout",
+    "deploy": "surge public https://big-yak.surge.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylergrinn/webpack-5.git"
+  },
+  "keywords": [
+    "webpack",
+    "html",
+    "vanilla"
+  ],
+  "author": "Tyler Grinn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylergrinn/webpack-5/issues"
+  },
+  "homepage": "https://github.com/tylergrinn/webpack-5#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.11.0",
+    "eslint-config-alloy": "^3.8.0",
+    "http-server": "^0.12.3",
+    "prettier": "^2.1.2",
+    "reload": "^3.1.1",
+    "surge": "^0.21.6"
+  }
+}

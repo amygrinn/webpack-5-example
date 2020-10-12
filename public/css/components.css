@@ -1,0 +1,22 @@
+@import './components/draggable.css';
+
+h1 {
+  padding: 0 8px;
+}
+
+h3 {
+  margin: 0;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+a {
+  color: unset;
+  margin: 8px;
+}
+
+p {
+  margin: 8px 0;
+}
