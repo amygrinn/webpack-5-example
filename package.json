@@ -6,6 +6,7 @@
   "scripts": {
     "start": "reload --browser --dir src",
     "build": "webpack",
+    "serve": "http-server public",
     "quality": "prettier --write . && eslint . --fix",
     "quality:check": "prettier -c . && eslint .",
     "deploy:login": "surge login",
