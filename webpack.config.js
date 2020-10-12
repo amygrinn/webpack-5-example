@@ -5,6 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackExcludeTagsPlugin = require('./html-webpack-exclude-tags-plugin');
+const HtmlWebpackExcludeAssetsPlugin = require('./html-webpack-exclude-assets-plugin');
 
 module.exports = {
   entry: {
@@ -35,5 +36,6 @@ module.exports = {
     new OptimizeCssAssetsPlugin(),
     new HtmlWebpackPlugin({ template: 'src/index.html' }),
     new HtmlWebpackExcludeTagsPlugin(),
+    new HtmlWebpackExcludeAssetsPlugin({ entry: 'styles', ext: 'js' }),
   ],
 };
