@@ -4,5 +4,6 @@ module.exports = {
   entry: './src/js/index.js',
   output: {
     path: path.join(__dirname, 'public'),
+    filename: '[name].[contenthash].js',
   },
 };
